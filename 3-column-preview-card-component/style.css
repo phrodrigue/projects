@@ -1,0 +1,125 @@
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    color: white;
+    max-width: 900px; /* 1440p */
+    margin: auto;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#sedan, #suv, #luxury {
+    max-width: 200px; /* 480px */
+    height: 350px;
+    padding: 50px;
+    display: inline-block;
+    animation: fromTop 1s linear,
+        fadeIn 1s linear;
+}
+
+#sedan .botao:hover, #suv .botao:hover, #luxury .botao:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#sedan .botao {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suv .botao {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#luxury .botao {
+    color: hsl(179, 100%, 13%);
+}
+
+.botao {
+    position: relative;
+    top: 80px;
+    padding: 15px;
+    text-align: center;
+    border: hsl(0, 0%, 95%) 1px solid;
+    border-radius: 50px;
+    width: 100px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.botao:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 950px) {
+    #sedan, #suv, #luxury {
+        max-width: 200px; /* 480px */
+        display: block;
+        margin: auto;
+        border-radius: 0px;
+        animation: fromLeft 1s linear,
+            fadeIn 1s linear;
+    }
+
+    #sedan {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #luxury {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+}
+
+@keyframes fromTop {
+    0% {
+        transform: translateY(-150%);
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+}
