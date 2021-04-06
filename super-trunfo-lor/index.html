@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <title>Document</title>
+  <!--
+        Link album do IMGUR:
+        https://imgur.com/a/68rfJwi
+      -->
+</head>
+
+<body onload="separaCartas()">
+  <div class="container">
+    <div id="titulo">
+      <h1 class="page-title">Super Trunfo - LoR</h1>
+      <p>
+        O Super Trunfo de Legends of Runeterra
+      </p>
+
+    </div>
+    <div>
+      <div id="placar"></div>
+      <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+      <div id="resultado"></div>
+    </div>
+    <div id="cartas">
+      <div id="cartaJogador"></div>
+      <div id="cartaMaquina"></div>
+    </div>
+
+    <form id="form">
+      <div id="selecAtributo">
+        <h2>Escolha o seu atributo</h2>
+        <div class="opcoes" id="opcoes"></div>
+        <button type="button" id="btnJogar" onclick="jogar()">Jogar</button><button type="button" id="btnNovoJogo"
+          onclick="proximaRodada()" disabled>Proxima rodada</button>
+      </div>
+    </form>
+    <div id="novo-jogo">
+      <button id="btnNovoJogo" onclick="novoJogo()">Jogar novamente</button>
+    </div>
+    <a href="https://imersao.dev/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+        alt="">
+    </a>
+    <a href="https://playruneterra.com/pt-br/" target="_blank">
+      <img src="https://static.wikia.nocookie.net/leagueoflegends/images/b/b0/Legends_of_Runeterra_logo.png"
+        alt="Legends of Runeterra" id="logo-lor">
+    </a>
+  </div>
+</body>
+
+</html>
