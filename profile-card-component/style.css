@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--very-dark-blue);
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+header {
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 150px;
+}
+
+.profile-photo {
+    transform: translateY(90%);
+    border-radius: 50%;
+    border: white 5px solid;
+}
+
+.user {
+    margin-top: 80px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--dark-gray);
+    color: var(--dark-grayish-blue);
+}
+
+.user h1 {
+    font-size: 700;
+    margin-bottom: 10px;
+    color: var(--very-dark-blue);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.user span {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.user p {
+    margin-top: 0px;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 50px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.numbers {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.data p {
+    font-size: 0.8em;
+}
+
+.bg-img {
+    position: absolute;
+    z-index: -1;
+}
+
+#img-top {
+    top: -450px;
+    left: -150px;
+}
+
+#img-bottom {
+    top: 500px;
+    right: -50px;
+}
+
+
+.attribution {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: white 1px dashed;
+    width: fit-content;
+    font-size: 11px; text-align: center;
+
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1265px){
+    #img-top {
+        left: -450px;
+    }
+    #img-bottom {
+        right: -350px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #img-top {
+        left: -750px;
+    }
+    #img-bottom {
+        right: -650px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .card {
+        margin-top: 100px;
+    }
+
+    footer {
+        display: block;
+    }
+}
