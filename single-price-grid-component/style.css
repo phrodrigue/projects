@@ -28,8 +28,7 @@ h3 {
 .card {
     background-color: white;
     width: 700px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 120px auto;
     border-radius: 20px;
     box-shadow: 5px 2px 20px #0000001f;
     display: grid;
