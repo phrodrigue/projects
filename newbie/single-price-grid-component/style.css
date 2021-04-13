@@ -27,11 +27,12 @@ h3 {
 
 .card {
     background-color: white;
-    width: 700px;
+    width: 635px;
     margin: 120px auto;
     border-radius: 20px;
     box-shadow: 5px 2px 20px #0000001f;
     display: grid;
+    grid-template-columns: 317px 317px;
     grid-template-areas:
     "area1 area1"
     "area2 area3";
@@ -48,6 +49,10 @@ h3 {
     color: var(--bright-yellow);
 }
 
+.um p {
+    margin-bottom: 10px;
+}
+
 .dois h3, .tres h3 {
     margin-top: 0%;
 }
@@ -57,13 +62,12 @@ h3 {
     grid-area: area2;
     background-color: var(--cyan);
     color: white;
-    padding: 50px;
+    padding: 40px;
     border-bottom-left-radius: 20px;
-    width: 250px;
 }
 
 .number {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
 }
 .price-text {
@@ -71,9 +75,13 @@ h3 {
     color: rgba(255, 255, 255, 0.377);
 }
 
+.dois p {
+    font-size: 15px;
+}
+
 button {
-    width: 250px;
-    padding: 0.75em;
+    min-width: 217px;
+    padding: 15px;
     background-color: var(--bright-yellow);
     border: none;
     border-radius: 5px;
@@ -88,9 +96,8 @@ button {
     grid-area: area3;
     background-color: var(--light-cyan);
     color: white;
-    padding: 50px;
+    padding: 40px;
     border-bottom-right-radius: 20px;
-    width: 250px;
 }
 
 .tres p {
@@ -113,7 +120,7 @@ color: hsl(228, 45%, 44%);
 
 @media screen and (max-width: 720px) {
     .card {
-        width: 350px;
+        max-width: 310px;
         grid-template-areas:
         "area1"
         "area2"
@@ -121,14 +128,19 @@ color: hsl(228, 45%, 44%);
     }
 
     .card section {
-        padding: 30px 50px;
+        padding: 35px 50px;
     }
 
     .dois {
         border-radius: 0;
+        max-width: 210px;
+    }
+    button {
+        min-width: 210px;
     }
 
     .tres {
         border-bottom-left-radius: 20px;
+        max-width: 210px;
     }
 }
