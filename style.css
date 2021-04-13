@@ -1,0 +1,37 @@
+* {
+  font-size: 13px;
+  font-family: Sans-Serif;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  margin: 50px auto;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #00000020
+}
+
+.challenge {
+  text-align: left;
+}
+
+table a {
+  color: black;
+}
+
+#ph, #ph a {
+  text-align: center;
+  font-size: 10px;
+}
