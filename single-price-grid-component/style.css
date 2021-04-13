@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: rgb(74, 190, 189);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: var(--light-gray);
+}
+
+h1 {
+    font-size: 25px;
+    color: var(--cyan);
+    margin-top: 0%;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.card {
+    background-color: white;
+    width: 700px;
+    margin: 120px auto;
+    border-radius: 20px;
+    box-shadow: 5px 2px 20px #0000001f;
+    display: grid;
+    grid-template-areas:
+    "area1 area1"
+    "area2 area3";
+}
+
+/*first area*/
+.um {
+    grid-area: area1;
+    color: var(--grayish-blue);
+    padding: 40px 50px;
+}
+
+.um h3 {
+    color: var(--bright-yellow);
+}
+
+.dois h3, .tres h3 {
+    margin-top: 0%;
+}
+
+/*second area*/
+.dois {
+    grid-area: area2;
+    background-color: var(--cyan);
+    color: white;
+    padding: 50px;
+    border-bottom-left-radius: 20px;
+    width: 250px;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: 700;
+}
+.price-text {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.377);
+}
+
+button {
+    width: 250px;
+    padding: 0.75em;
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 6px 20px 4px #0000001f;
+    color: white;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+/*third area*/
+.tres {
+    grid-area: area3;
+    background-color: var(--light-cyan);
+    color: white;
+    padding: 50px;
+    border-bottom-right-radius: 20px;
+    width: 250px;
+}
+
+.tres p {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.712);
+    margin: 2px;
+    font-size: 14px;
+}
+
+
+/*footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        width: 350px;
+        grid-template-areas:
+        "area1"
+        "area2"
+        "area3";
+    }
+
+    .card section {
+        padding: 30px 50px;
+    }
+
+    .dois {
+        border-radius: 0;
+    }
+
+    .tres {
+        border-bottom-left-radius: 20px;
+    }
+}
