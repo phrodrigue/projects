@@ -1,36 +1,36 @@
+body {
+    margin: 0px;
+}
+
 main {
-    padding-top: 50px;
+    padding-top: 171px;
     padding-bottom: 50px;
     font-size: 15px;
     color: white;
-    max-width: 900px; /* 1440p */
+    max-width: 921px;
     margin: auto;
     font-family: 'Lexend Deca', sans-serif;
-
+    /* animation: fromTop 1s linear,
+        fadeIn 1s linear;*/
 }
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
     color: hsl(0, 0%, 95%);
+    margin: 35px 0;
 }
 
 p {
     color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
 }
 
 #sedan, #suv, #luxury {
-    max-width: 200px; /* 480px */
-    height: 350px;
+    max-width: 207px;
+    height: 400px;
     padding: 50px;
     display: inline-block;
-    animation: fromTop 1s linear,
-        fadeIn 1s linear;
-}
-
-#sedan .botao:hover, #suv .botao:hover, #luxury .botao:hover {
-    background-color: rgba(255, 255, 255, 0);
-    color: #ffffff;
-    cursor: pointer;
 }
 
 #sedan {
@@ -39,16 +39,8 @@ p {
     border-bottom-left-radius: 15px;
 }
 
-#sedan .botao {
-    color: hsl(31, 77%, 52%);
-}
-
 #suv {
     background-color: hsl(184, 100%, 22%);
-}
-
-#suv .botao {
-    color: hsl(184, 100%, 22%);
 }
 
 #luxury {
@@ -57,13 +49,23 @@ p {
     border-bottom-right-radius: 15px;
 }
 
+
+/* buttns */
+#sedan .botao {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv .botao {
+    color: hsl(184, 100%, 22%);
+}
+
 #luxury .botao {
     color: hsl(179, 100%, 13%);
 }
 
 .botao {
     position: relative;
-    top: 80px;
+    top: 60px;
     padding: 15px;
     text-align: center;
     border: hsl(0, 0%, 95%) 1px solid;
@@ -72,10 +74,15 @@ p {
     background-color: hsl(0, 0%, 95%);
 }
 
-.botao:hover {
+#sedan .botao:hover, #suv .botao:hover, #luxury .botao:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    cursor: pointer;
     color: rgba(0, 0, 0, 0);
 }
 
+
+/* footer */
 .attribution {
     font-size: 11px; text-align: center; 
 }
@@ -84,14 +91,20 @@ p {
     color: hsl(228, 45%, 44%); 
 }
 
+
 @media screen and (max-width: 950px) {
+    main {
+        padding-top: 88px;
+        /* animation: fromLeft 1s linear,
+            fadeIn 1s linear; */
+    }
+
     #sedan, #suv, #luxury {
-        max-width: 200px; /* 480px */
+        max-width: 227px;
+        height: 342px;
         display: block;
         margin: auto;
         border-radius: 0px;
-        animation: fromLeft 1s linear,
-            fadeIn 1s linear;
     }
 
     #sedan {
@@ -102,6 +115,10 @@ p {
     #luxury {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
+    }
+
+    .botao {
+        top: 0px;
     }
 
 }

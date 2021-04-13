@@ -20,7 +20,7 @@ body {
     text-align: center;
     width: 400px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 173px;
     background-color: white;
     border-radius: 20px;
 }
@@ -29,11 +29,11 @@ header {
     background-image: url(images/bg-pattern-card.svg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 150px;
+    height: 140px;
 }
 
 .profile-photo {
-    transform: translateY(90%);
+    transform: translateY(90px);
     border-radius: 50%;
     border: white 5px solid;
 }
@@ -98,13 +98,9 @@ footer {
 
 
 .attribution {
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto;
     padding: 10px;
-    border: white 1px dashed;
-    width: fit-content;
     font-size: 11px; text-align: center;
-
 }
 .attribution a {
     color: hsl(228, 45%, 44%);

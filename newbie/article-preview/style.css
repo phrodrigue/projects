@@ -12,12 +12,12 @@ body {
   color: var(--very-dark-grayish-blue);
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 main {
   margin: 100px auto 30px auto;
-  max-width: 375px;
+  max-width: 327px;
   background-color: white;
   border-radius: 10px;
   animation: fadeInCard 0.5s ease-in-out;
@@ -28,27 +28,25 @@ main {
   height: 200px;
   background-image: url('./images/drawers.jpg');
   background-size: cover;
-  background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 1.25em;
-}
 
 #body {
-  padding: 20px 40px 0;
+  padding: 40px;
+  padding-bottom: 10px;
 }
+
+#body h1 {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0%;
+}
+
 
 #footer {
-  height: 75px;
-}
-
-#user {
-  grid-template-areas: "avatar bio share-btn";
-  
+  height: 65px;
 }
 
 #user, #div-options-share {
@@ -58,13 +56,17 @@ h1 {
   border-bottom-right-radius: 10px;
 }
 
+#user {
+  grid-template-areas: "avatar bio share-btn";
+}
+
 #div-share-btn, #div-active-share-btn {
   text-align: right;
   margin-top: 10px;
 }
 
 #avatar {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
 }
 
@@ -82,7 +84,7 @@ h1 {
 
 
 #share-btn {
-  padding: 7px;
+  padding: 10px;
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
   cursor: pointer;
@@ -91,9 +93,9 @@ h1 {
 #div-options-share {
   background-color: var(--very-dark-grayish-blue);
   position: relative;
-  top: -70px;
+  top: -65px;
   color: var(--grayish-blue);
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   grid-template-areas: "text options share-btn";
 }
 
@@ -108,7 +110,7 @@ h1 {
 }
 
 #active-share-btn {
-  padding: 7px;
+  padding: 10px;
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
   cursor: pointer;
@@ -125,9 +127,9 @@ h1 {
   main {
     font-size: 13px;
     margin-top: 200px;
-    max-width: 700px;
+    max-width: 730px;
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 285px auto;
     grid-template-areas: 
     "header body" 
     "header footer";
@@ -135,36 +137,51 @@ h1 {
   }
 
   #header {
-    width: 250px;
-    height: 250px;
+    width: 285px;
+    height: 280px;
     background-position: left;
     grid-area: header;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
   }
+
+
   #body {
     grid-area: body;
+    padding: 40px 40px 0 40px;
+  }
+  #body h1 {
+    font-size: 1.5rem;
   }
   #footer {
     grid-area: footer;
+  }
+
+  #user {
+    grid-template-columns: 60px auto;
   }
 
   #options {
     width: auto;
   }
   #div-options-share {
-    width: 220px;
+    width: 170px;
+    height: 55px;
+    padding: 10px 37px;
     grid-template-columns: 90px auto;
     grid-template-areas: "text options";
 
     border-radius: 10px;
     padding: 0 40px;
 
-    top: -100px;
-    right: -200px;
+    top: -120px;
+    right: -260px;
   }
   #options img {
-    padding: 10px 0 0 15px;
+    padding: 15px 0 0 0;
+  }
+  #div-options-share p {
+    margin: 18px 0;
   }
   #div-active-share-btn {
     display: none;
