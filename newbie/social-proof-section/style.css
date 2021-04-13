@@ -25,11 +25,11 @@ main {
 
 .header h1 {
     color: var(--very-dark-magenta);
-    font-size: 2em;
+    font-size: 28px;
     margin: 20px 50px;
 }
 
-.header p {
+.header h2 {
     color: var(--dark-grayish-magenta);
     margin: 20px 0;
 }
@@ -145,11 +145,13 @@ color: hsl(228, 45%, 44%);
         padding-left: 0;
     }
     .header h1 {
-        font-size: 40px;
+        font-size: 45px;
         margin: 100px 150px 0 0;
     }
-    .header p {
-        margin-right: 100px;
+    .header h2 {
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 400;
     }
     
     /* ratings */
@@ -158,17 +160,24 @@ color: hsl(228, 45%, 44%);
         margin-top: 115px;
     }
     .rating {
-        height: 22px;
+        height: 16px;
         max-width: 415px;
-        padding: 17px;
+        padding: 20px;
         font-size: 11px;
         display: grid;
         grid-template-areas: 
             "rate place";
     }
+    .stars {
+        height: 16px;
+    }
+    .rating img {
+        margin: 0px 5px;
+    }
     .rating span {
         grid-area: place;
-        padding: 5px;
+        padding: 5px 0 0 0;
+        text-align: left;
     }
 
     .rating:nth-child(2) {

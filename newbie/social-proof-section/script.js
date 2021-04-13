@@ -1,7 +1,7 @@
 function loadStars() {
     var html_star = "<div class='stars'>"
     for (var star = 0; star < 5; star++) {
-        html_star += "<img src='./images/icon-star.svg'>"
+        html_star += "<img src='./images/icon-star.svg' alt='star icon'>"
     }
     html_star += "</div><br>"
     var divs_rating = document.getElementsByClassName("rating")
