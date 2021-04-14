@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --color_fill: #fff;
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: var(--violet);
+    color: white;
+    margin: 0%;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 35px;
+    margin: auto;
+    max-width: 305px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 65px;
+}
+
+.illustration-mockups {
+    width: 300px;
+}
+
+.content {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 1.8rem;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: var(--violet);
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 64px;
+    margin-top: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.329);
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: var(--soft-magenta);
+    transition-duration: 0.5s;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.div-logo-media {
+    width: 20px;
+    height: 20px;
+    border: white 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    margin: 0 5px;
+}
+
+.logo-social-media {
+    width: 20px;
+    height: 20px;
+}
+
+.div-logo-media:hover {
+    color: var(--soft-magenta);
+    border: var(--soft-magenta) 1px solid;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--soft-magenta);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-position-x: 100px;
+    }
+    main {
+        max-width: 1300px;
+        padding: 60px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 65px;
+    }
+
+    main > section {
+        display: grid;
+    }
+
+    .illustration-mockups {
+        width: 700px;
+    }
+
+    .content {
+        padding: 0 60px;
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin: 0%;
+    }
+
+    button {
+        height: 56px;
+        border-radius: 30px;
+    }
+
+    .social-media {
+        grid-area: socialmedia;
+        text-align: right;
+    }
+    .attribution {
+        margin-top: 0px;
+    }
+}

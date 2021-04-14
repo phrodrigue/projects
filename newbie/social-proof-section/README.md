@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/social-proof-section/)
+- Solution URL: [here](https://phrodrigue.github.io/newbie/social-proof-section/)
 
 ## My process
 
