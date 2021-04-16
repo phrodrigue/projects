@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Primary */
+    --very-dark-blue: hsl(233, 47%, 7%); /* main background */
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /* (card background)*/
+    --softsviolet: hsl(277, 64%, 61%); /* (accent)*/
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%); /* (main heading, stats)*/
+    --slightly-transparent-white1: hsla(0, 0%, 100%, 0.75); /* (main paragraph)*/
+    --slightly-transparent-white2: hsla(0, 0%, 100%, 0.6); /* (stat headings)*/
+}
+
+
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 25px;
+    background-color: var(--very-dark-blue);
+    color: white;
+    text-align: center;
+}
+
+main {
+    max-width: 310px;
+    margin: auto;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out, fromRight 1s ease;
+}
+
+header {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: var(--softsviolet);
+    height: 240px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.content {
+   padding: 40px 35px;
+   padding-bottom: 10px;
+}
+
+.content h1, .values {
+    font-family: 'Inter', sans-serif;
+    margin-top: 0px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+}
+
+span {
+    color: var(--softsviolet);
+}
+
+.content p, .stats {
+    color: var(--slightly-transparent-white1);
+    line-height: 1.6em;
+    font-size: 13px;
+}
+
+.stats > div {
+    margin-top: 37px;
+    margin-bottom: 20px;
+}
+
+.stats > div > div:nth-child(2) {
+    color: var(--slightly-transparent-white2);
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1120px) {
+    body {
+        margin-top: 180px;
+    }
+
+    main {
+        max-width: 1110px;
+        height: 445px;
+        
+        display: grid;
+        grid-template-columns: auto 540px;
+        grid-template-areas: "content image";
+        text-align: left;
+    }
+
+    header {
+        background-image: url(images/image-header-desktop.jpg);
+        height: 445px;
+        grid-area: image;
+
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+    }
+
+    .content {
+        padding: 75px 70px;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .content p {
+        font-size: 15px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(50%);
+    }
+}
