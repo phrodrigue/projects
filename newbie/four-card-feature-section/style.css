@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: var(--grayish-blue);
+  margin: 0px;
+  background-color: var(--very-light-gray);
+}
+
+main {
+  max-width: 344px;
+  padding: 40px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.header p {
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  font-size: 27px;
+}
+
+span {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+p {
+  font-size: 1rem;
+}
+  
+
+.card {
+  padding: 30px;
+  -webkit-box-shadow: 0px 8px 20px -2px #C0C0C0; 
+  box-shadow: 0px 8px 20px -2px #C0C0C0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+  display: grid;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.supervisor {
+  border-top: var(--cyan) 5px solid;
+}
+.team-builder {
+  border-top: var(--red) 5px solid;
+}
+.karma {
+  border-top: var(--orange) 5px solid;
+}
+.calculator {
+  border-top: var(--blue) 5px solid;
+}
+
+.card-icon {
+  text-align: right;
+  margin-top: 30px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 275px) {
+  .card-icon {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  main {
+    max-width: 1110px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .header p {
+    width: 500px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-areas: 
+      "area1 area2 area3"
+      "area1 area4 area3";
+  }
+  .card {
+    height: 191px;
+    width: 284px;
+  }
+  .supervisor {
+    grid-area: area1;
+    position: relative;
+    top: 25%;
+  }
+  .team-builder {
+    grid-area: area2;
+  }
+  .calculator {
+    grid-area: area3;
+    position: relative;
+    top: 25%;
+  }
+}
