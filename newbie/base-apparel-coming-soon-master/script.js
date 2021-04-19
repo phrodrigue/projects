@@ -1,27 +1,36 @@
 var inputEmail = document.getElementById("inputEmail");
 var iconError = document.getElementById("icon-error");
 var errorMessage = document.getElementById("error-message")
-var inputField = document.getElementById("email-input")
+var divInput = document.getElementById("email-input")
 
-function validateEmail(email) {
-    var re = /^\S+@\S+\.\S+$/;
-    return re.test(email);
-}
 
 function checkEmail() {
+    var re = /^\S+@\S+\.\S+$/;
     var email = inputEmail.value
-    
-    if (validateEmail(email)) {
-        iconError.style.display = "none"
-        errorMessage.style.display = "none"
-        inputField.style.border = "2px hsl(0, 80%, 86%) solid"
+    var borderNormal = "2px hsl(0, 80%, 86%) solid"
+    var borderError = "2px hsl(0, 93%, 68%) solid"
+    var textErrorMessage = ""
 
-        console.log("email valido")
+    if (re.test(email)) {
+        iconError.style.visibility = "hidden"
+        errorMessage.style.visibility = "hidden"
+        inputEmail.style.borderTop = borderNormal
+        inputEmail.style.borderBottom = borderNormal
+        inputEmail.style.borderLeft = borderNormal
+        divInput.style.border = borderNormal
     } else {
-        iconError.style.display = "block"
-        errorMessage.style.display = "block"
-        inputField.style.border = "2px hsl(0, 93%, 68%) solid"
+        if (email === "") {
+            textErrorMessage = "Please provide an email"
+        } else {
+            textErrorMessage = "Please provide a valid email"
+        }
 
-        console.log(':(')
+        iconError.style.visibility = "visible"
+        errorMessage.style.visibility = "visible"
+        errorMessage.innerHTML = textErrorMessage
+        inputEmail.style.borderTop = borderError
+        inputEmail.style.borderBottom = borderError
+        inputEmail.style.borderLeft = borderError
+        divInput.style.border = borderError
     }
 }
