@@ -12,6 +12,7 @@ class Challenge {
 }
 
 
+
 var listSolutions = [
     new Challenge(
         "3 Column Preview Card",
@@ -61,10 +62,15 @@ var listSolutions = [
         "newbie/base-apparel-coming-soon-master",
         "newbie/base-apparel-coming-soon-master"
         ),
+    new Challenge(
+        "Coding bootcamp testimonials slider",
+        "coding-bootcamp-testimonials-slider-4FNyLA8JL",
+        "newbie/coding-bootcamp-testimonials-slider/index.html",
+        "newbie/coding-bootcamp-testimonials-slider"
+    ),
         
         
-        /*
-    OBS.: PASSAR ESSA PORRA PRA JSON
+    /*
     new Challenge(
         "",
         "",
