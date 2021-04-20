@@ -10,12 +10,25 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
+    main {
+        width: 500px;
+    }
+    .image {
+        background-image: url(../images/hero-desktop.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 380px 500px;
+        height: 380px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
     body {
         background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
     main {
-        width: 1440px;
+        width: auto;
         display: grid;
         grid-template-areas: 
             "logo image"
@@ -24,24 +37,21 @@
         background-image: url(../images/bg-pattern-desktop.svg);
     }
 
-    .logo {
-        padding: 60px 160px;
-    }
-
     header {
         margin-left: 0px;
     }
 
     .image {
         background-image: url(../images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
         width: 610px;
         height: 800px;
         grid-area: image;
     }
 
     .content {
-        padding: 60px 160px;
-        padding-right: 220px;
+        padding: 60px 100px;
         text-align: left;
     }
     
@@ -53,17 +63,17 @@
     }
 
     p {
-        font-size: 16px;
+        font-size: 19px;
+        line-height: 2;
     }
 
     .logo {
         width: 158px;
         height: 33px;
-        padding-top: 30px;
-        padding-bottom: 0px;
+        padding: 30px 100px 0;
     }
 
-    #email-input {
+    #form-email {
         width: 450px;
     }
 
@@ -78,3 +88,16 @@
     }
 }
 
+@media screen and (min-width: 1300px) {
+    .content, .logo {
+        width: auto;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        width: 1440px;
+    }
+}
