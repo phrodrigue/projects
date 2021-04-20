@@ -1,0 +1,72 @@
+@media screen and (min-width: 900px) {    
+    main {
+        width: 900px;
+        margin: auto;
+        padding-top: 100px;
+        background-position-x: left;
+        background-size: 400px;
+
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-areas: 
+            "quotes slider";
+    }
+
+    #quotes {
+        background-position-x: 70px;
+        width: 400px;
+        text-align: left;
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+
+    #slider {
+        grid-area: slider;
+        width: 400px;
+        height: 370px;
+    }
+
+    #slider-img, .image {
+        width: 370px;
+        height: 370px;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px) {
+    main {
+        width: 1000px;
+        grid-template-columns: 500px 500px;
+    }
+
+    #quotes {
+        width: 500px;
+    }
+
+    .quote > p {
+        font-size: 25px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 1.3;
+    }
+
+    .author {
+        display: flex;
+    }
+
+    .position {
+        margin-left: 10px;
+    }
+
+    #slider {
+        width: 500px;
+        height: 470px;
+    }
+
+    #slider-img, .image {
+        width: 470px;
+        height: 470px;
+    }
+}
