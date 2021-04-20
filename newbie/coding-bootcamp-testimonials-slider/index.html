@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="media.css">
+
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+</head>
+
+<body>
+  <main>
+    <section id="slider">
+      <div id="slider-img">
+        <img src="images/image-tanya.jpg" alt="image tanya" class="image">
+        <img src="images/image-john.jpg" alt="image john" class="image">
+      </div>
+      <div id="slider-buttons">
+        <div class="button btn-prev" onclick="changeQuote(-1)">
+          <img src="images/icon-prev.svg" alt="Previous quote">
+        </div>
+        <div class="button btn-next" onclick="changeQuote(1)">
+          <img src="images/icon-next.svg" alt="Next quote">
+        </div>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <div id="quote-tanya" class="quote">
+        <p>
+          “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this
+          course enough. I’m now in the job of my dreams and so excited about the future. ”
+        </p>
+
+        <div class="author">
+          <div>
+            Tanya Sinclair
+          </div>
+          <div class="position">
+            UX Engineer
+          </div>
+        </div>
+      </div>
+
+      <div id="quote-jonh" class="quote">
+        <p>
+          “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors
+          go into is incredible. I now feel so confident about starting up as a professional developer. ”
+        </p>
+
+        <div class="author">
+          <div>
+            John Tarkpor
+          </div>
+          <div class="position">
+            Junior Front-end Developer
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by  <a href="https://github.com/phrodrigue/" target="_blank">Pedro Rodrigues</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
