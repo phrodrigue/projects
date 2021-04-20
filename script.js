@@ -1,6 +1,6 @@
 var urlChallenge = "https://www.frontendmentor.io/challenges/"
-var urlRepository = "https://phrodrigue.github.io/"
-var urlSolution = "https://github.com/phrodrigue/phrodrigue.github.io/tree/master/"
+var urlRepository = "https://phrodrigue.github.io/projects/"
+var urlSolution = "https://github.com/phrodrigue/projects/tree/master/"
 
 class Challenge {
     constructor(name, challenge, repository, solution) {
@@ -17,7 +17,7 @@ var listSolutions = [
     new Challenge(
         "3 Column Preview Card",
         "3column-preview-card-component-pH92eAR2-",
-        "newbie/desafio-3-colunas-frontend-mentor/index.html",
+        "newbie/desafio-3-colunas-frontend-mentor",
         "newbie/desafio-3-colunas-frontend-mentor"
     ),
     new Challenge(
@@ -65,7 +65,7 @@ var listSolutions = [
     new Challenge(
         "Coding bootcamp testimonials slider",
         "coding-bootcamp-testimonials-slider-4FNyLA8JL",
-        "newbie/coding-bootcamp-testimonials-slider/index.html",
+        "newbie/coding-bootcamp-testimonials-slider",
         "newbie/coding-bootcamp-testimonials-slider"
     ),
         
