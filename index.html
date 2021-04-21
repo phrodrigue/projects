@@ -2,26 +2,41 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="page/styles/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="page/styles/difficulties.css">
+  <link rel="stylesheet" href="page/styles/keyframes.css">
   <title>Frontend Mentor Solutions</title>
 </head>
 
-<body onload="createTable()">
-  <table>
-    <caption>SOLUTIONS</caption>
-    <tbody id="table">
-      <tr>
-        <th>Challenge</th>
-        <th>Solution url</th>
-        <th>Solution repository</th>
-      </tr>
-    </tbody>
-  </table>
-
-  <div id="ph">
-    Coded by <a href="https://github.com/phrodrigue" target="_blank">Pedro Rodrigues</a>
-  </div>
+<body onload="carregar()">
+  <main>
+    <div class="difficulties">
+      <div id="title">Difficulties</div>
+      <div id="colors" style="display: none;">
+        <div class="difficulty">
+          <p>Newbie</p>
+        </div>
+        <div class="difficulty">
+          <p>Junior</p>
+        </div>
+        <div class="difficulty">
+          <p>Intermediate</p>
+        </div>
+        <div class="difficulty">
+          <p>Advanced</p>
+        </div>
+        <div class="difficulty">
+          <p>Guru</p>
+        </div>
+      </div>
+    </div>
+    <ul id="solutions"></ul>
+    <div id="ph">
+      Coded by <a href="https://github.com/phrodrigue" target="_blank">Pedro Rodrigues</a>
+    </div>
+  </main>
 
 </body>
-<script src="script.js"></script>
+
+<script src="page/script.js"></script>
 </html>
