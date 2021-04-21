@@ -58,11 +58,17 @@ main {
   width: 50px;
   padding-top: 8px;
   background-color: white;
+  border: none;
 }
 
 .button:hover {
   cursor: pointer;
   background-color: rgb(236, 236, 236);
+}
+
+.button:focus {
+  background-color: rgb(236, 236, 236);
+  border: 1px #8d6cce dashed;
 }
 
 .btn-prev {
