@@ -1,0 +1,65 @@
+.difficulties {
+    margin: auto;
+    padding: 10px 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px var(--light-grey) solid;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+}
+
+#title {
+    background-color: var(--very-light-grey);
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+#title:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+#colors {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#colors {
+    animation: diffGrowDown 300ms ease-in-out;
+    transform-origin: top center;
+}
+
+.difficulty {
+    padding: 0px auto;
+    margin: 10px 0px;
+}
+
+.difficulty p {
+    margin: 0;
+    padding: 3px 5px;
+}
+
+.difficulty:nth-child(1) p {
+    background-color: var(--newbie);
+}
+
+.difficulty:nth-child(2) p {
+    background-color: var(--junior);
+}
+
+.difficulty:nth-child(3) p {
+    background-color: var(--intermediate);
+}
+
+.difficulty:nth-child(4) p {
+    background-color: var(--advanced);
+}
+
+.difficulty:nth-child(5) p {
+    background-color: var(--guru);
+}
+
+.newbie {
+    border-left: 3px var(--newbie) solid;
+}

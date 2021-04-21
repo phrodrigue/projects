@@ -1,0 +1,91 @@
+:root {
+  /* main colors */
+  --dark-grey: #252623;
+  --grey:#636159;
+  --yellow:#decc00;
+  --light-grey: #BFB6A8;
+  --very-light-grey: #EDEDE6;
+
+  /* difficulties colors */
+  --newbie: #5ae2a9;
+  --junior: #aad742;
+  --intermediate: #fdce81;
+  --advanced: #ff9e7a;
+  --guru: #eb5252;
+}
+
+body {
+  font-size: 14px;
+  font-family: Sans-Serif;
+  background-color: var(--very-light-grey);
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+
+}
+
+#ph, #ph a {
+  text-align: center;
+  font-size: 13px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.challenge {
+  background-color: var(--light-grey);
+  margin: 5px 30px;
+  border-radius: 20px;
+}
+
+.challenge-name {
+  background-color: var(--dark-grey);
+  color: var(--yellow);
+  font-weight: 500;
+  text-align: left;
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto 30px;
+}
+
+.challenge-name:hover {
+  cursor: pointer;
+  background-color: #252623d2;
+}
+
+.challenge-name img {
+  width: 20px;
+}
+
+.links {
+  display: flex;
+  padding: 30px;
+  text-align: center;
+}
+
+.link {
+  flex-grow: 1;
+}
+
+.link a {
+  color: var(--dark-grey);
+  padding: 10px;
+  border: 1px var(--dark-grey) solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: var(--yellow);
+  background-color: var(--dark-grey);
+}
+
+.links--animated {
+  animation: growDown 300ms ease-in-out;
+  transform-origin: top center;
+}
