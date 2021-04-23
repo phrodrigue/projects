@@ -78,6 +78,7 @@ var listSolutions = [
     "coding-bootcamp-testimonials-slider",
     "newbie"
   ),
+  /*
     new Challenge(
         "desafio teste",
         "desafio-teste",
@@ -108,7 +109,6 @@ var listSolutions = [
     ),
 
 
-  /*
     new Challenge(
         "",
         "",
@@ -120,24 +120,6 @@ var listSolutions = [
 
 ]
 
-
-// document.querySelector(".dados").addEventListener()
-
-//USAR JS PARA POVOAR OS ITENS COM A LISTA ACIMA
-
-// function mostrar(n) {
-//     var itens = document.getElementsByClassName("links--animated")
-//     var selectedChallenge = itens[n]
-
-//     if (selectedChallenge.style.display == "none") {
-//         for (var i = 0; i < itens.length; i++) {
-//             itens[i].style.display = "none"
-//         }
-//         selectedChallenge.style.display = "block"
-//     } else {
-//         selectedChallenge.style.display = "none"
-//     }
-// }
 
 var local = document.getElementById("solutions")
 
@@ -152,8 +134,7 @@ function carregar() {
         </li>`
       htmlDifficulty = document.querySelector(".diff-" + element.difficulty)
     }
-
-    //<img src="page/images/down-arrow.svg">
+    
     var html = `
       <div class="challenge">
         <div class="challenge-name ${element.difficulty}">
