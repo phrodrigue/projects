@@ -1,0 +1,9 @@
+@media screen and (max-width: 400px) {
+    .links {
+        padding-bottom: 0;
+    }
+
+    .link {
+        height: 50px;
+    }
+}

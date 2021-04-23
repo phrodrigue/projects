@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Nunito:wght@300;400;900&display=swap');
+
 :root {
   /* main colors */
   --dark-grey: #252623;
-  --grey:#636159;
-  --yellow:#decc00;
+  --grey: #636159;
+  --yellow: #decc00;
   --light-grey: #BFB6A8;
   --very-light-grey: #EDEDE6;
 
@@ -16,14 +18,17 @@
 
 body {
   font-size: 14px;
-  font-family: Sans-Serif;
-  background-color: var(--very-light-grey);
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff;
 }
 
 main {
   max-width: 600px;
   margin: auto;
+}
 
+h1 {
+  font-weight: 900;
 }
 
 #ph, #ph a {
@@ -34,58 +39,66 @@ main {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-.challenge {
-  background-color: var(--light-grey);
-  margin: 5px 30px;
+.difficulty-menu {
+  max-height: 40px;
+  transition: max-height 0.5s ease-out;
   border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: var(--very-light-grey);
 }
 
-.challenge-name {
-  background-color: var(--dark-grey);
+.difficulty-menu:hover, .difficulty-menu:focus-within {
+  max-height: 1000px;
+  padding-bottom: 10px;
+}
+
+.difficulty-menu:hover .challenge, .difficulty-menu:focus-within .challenge {
+  max-height: 300px;
+  transition: max-height 0.5s ease-in;
+}
+
+.difficulty-name {
+  border-radius: 15px;
   color: var(--yellow);
-  font-weight: 500;
-  text-align: left;
-  padding: 10px 30px;
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: auto 30px;
-}
-
-.challenge-name:hover {
-  cursor: pointer;
-  background-color: #252623d2;
-}
-
-.challenge-name img {
-  width: 20px;
-}
-
-.links {
-  display: flex;
-  padding: 30px;
+  background-color: var(--dark-grey);
+  text-transform: uppercase;
   text-align: center;
+  height: 40px;
 }
 
-.link {
-  flex-grow: 1;
+.difficulty-name > h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 5px;
+
 }
 
-.link a {
-  color: var(--dark-grey);
-  padding: 10px;
-  border: 1px var(--dark-grey) solid;
-  border-radius: 5px;
-  text-decoration: none;
+.diff-newbie {
+  border-left: 6px var(--newbie) solid;
+  border-right: 6px var(--newbie) solid;
+  border-bottom: 1px var(--newbie) solid;
 }
 
-.link a:hover {
-  color: var(--yellow);
-  background-color: var(--dark-grey);
+.diff-junior {
+  border-left: 6px var(--junior) solid;
+  border-right: 6px var(--junior) solid;
 }
 
-.links--animated {
-  animation: growDown 300ms ease-in-out;
-  transform-origin: top center;
+.diff-intermediate {
+  border-left: 6px var(--intermediate) solid;
+  border-right: 6px var(--intermediate) solid;
+}
+
+.diff-advanced {
+  border-left: 6px var(--advanced) solid;
+  border-right: 6px var(--advanced) solid;
+}
+
+.diff-guru {
+  border-left: 6px var(--guru) solid;
+  border-right: 6px var(--guru) solid;
 }
