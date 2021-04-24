@@ -44,7 +44,7 @@ ul {
 
 .difficulty-menu {
   max-height: 40px;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.25s ease-out;
   border-radius: 20px;
   margin-bottom: 10px;
   background-color: var(--very-light-grey);
@@ -56,8 +56,8 @@ ul {
 }
 
 .difficulty-menu:hover .challenge, .difficulty-menu:focus-within .challenge {
-  max-height: 300px;
-  transition: max-height 0.5s ease-in;
+  max-height: 1000px;
+  transition: max-height 0.25s ease-in;
 }
 
 .difficulty-name {
@@ -86,19 +86,23 @@ ul {
 .diff-junior {
   border-left: 6px var(--junior) solid;
   border-right: 6px var(--junior) solid;
+  border-bottom: 1px var(--junior) solid;
 }
 
 .diff-intermediate {
   border-left: 6px var(--intermediate) solid;
   border-right: 6px var(--intermediate) solid;
+  border-bottom: 1px var(--intermediate) solid;
 }
 
 .diff-advanced {
   border-left: 6px var(--advanced) solid;
   border-right: 6px var(--advanced) solid;
+  border-bottom: 1px var(--advanced) solid;
 }
 
 .diff-guru {
   border-left: 6px var(--guru) solid;
   border-right: 6px var(--guru) solid;
+  border-bottom: 1px var(--guru) solid;
 }
