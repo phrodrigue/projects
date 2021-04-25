@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-position: center;
+  background-color: var(--red);
+}
+
+main {
+  width: 315px;
+  margin: auto;
+}
+
+.content {
+  margin: 100px 0 60px;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.content p {
+  font-weight: 500;
+}
+
+.free-trial {
+  background-color: var(--blue);
+  border-radius: 10px;
+  box-shadow: 0px 11px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  padding: 15px 50px;
+  line-height: 30px;
+}
+
+.free-trial span {
+  font-weight: 600;
+}
+
+form {
+  background-color: white;
+  color: var(--dark-blue);
+  padding: 3px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 11px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-item {
+  border: 1px hsla(246, 25%, 77%, 0.501) solid;
+  border-radius: 5px;
+  max-width: 375px;
+  height: 50px;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 253px 0px;
+  align-items: center;
+}
+
+input {
+  padding: 0 20px;
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.icon-error {
+  position: relative;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.warning-message {
+  position: relative;
+  right: 10px;
+  top: 5px;
+  text-align: right;
+  color: var(--red);
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.no-warning {
+  display: none;
+}
+
+button {
+  background-color: var(--Green);
+  width: 255px;
+  height: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-radius: 8px;
+  border-color: var(--Green);
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.terms {
+  font-size: 0.7rem;
+  color: var(--grayish-blue);
+  margin: 15px;
+}
+
+.terms a {
+  color: var(--red);
+}
+
+.attribution {
+  margin: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
