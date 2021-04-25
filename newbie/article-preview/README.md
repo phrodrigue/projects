@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/newbie/article-preview/)
+- Solution URL: [here](https://phrodrigue.github.io/projects/newbie/article-preview/)
 
 ## My process
 

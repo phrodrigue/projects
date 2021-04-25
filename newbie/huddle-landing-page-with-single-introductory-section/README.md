@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/newbie/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [here](https://phrodrigue.github.io/projects/newbie/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 

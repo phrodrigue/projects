@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/newbie/intro-component-with-signup-form/)
+- Solution URL: [here](https://phrodrigue.github.io/projects/newbie/intro-component-with-signup-form/)
 
 ## My process
 

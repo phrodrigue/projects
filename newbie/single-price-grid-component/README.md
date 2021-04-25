@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/newbie/single-price-grid-component/)
+- Solution URL: [here](https://phrodrigue.github.io/projects/newbie/single-price-grid-component/)
 
 ## My process
 
