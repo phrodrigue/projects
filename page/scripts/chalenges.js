@@ -1,10 +1,10 @@
 class Challenge {
-    constructor(name, challenge, condensedName, difficulty) {
+    constructor(challengeName, challenge, condensedName, difficulty) {
         let urlChallenge = "https://www.frontendmentor.io/challenges/"
         let urlRepository = "https://github.com/phrodrigue/projects/tree/master/"
         let urlSolution = "https://phrodrigue.github.io/projects/"
 
-        this.name = name
+        this.name = challengeName
         this.challenge = urlChallenge + challenge
         this.difficulty = difficulty
         this.repository = urlRepository + this.difficulty + "/" + condensedName
@@ -68,10 +68,21 @@ var listSolutions = [
         "coding-bootcamp-testimonials-slider",
         "newbie"
     ),
+    new Challenge(
+        "Intro component with sign-up form",
+        "intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+        "intro-component-with-signup-form",
+        "newbie"
+    ),
     /*
+    new Challenge(
+        "Ping single column coming soon page",
+        "ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
+        "ping-coming-soon-page",
+        "newbie"
+    ),
       new Challenge(
           "desafio teste",
-          "desafio-teste",
           "desafio-teste",
           "desafio-teste",
           "junior"
@@ -80,19 +91,16 @@ var listSolutions = [
           "desafio teste",
           "desafio-teste",
           "desafio-teste",
-          "desafio-teste",
           "intermediate"
       ),
       new Challenge(
           "desafio teste",
           "desafio-teste",
           "desafio-teste",
-          "desafio-teste",
           "advanced"
       ),
       new Challenge(
           "desafio teste",
-          "desafio-teste",
           "desafio-teste",
           "desafio-teste",
           "guru"

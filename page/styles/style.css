@@ -17,7 +17,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
   background-color: #fff;
 }
@@ -33,7 +33,7 @@ h1 {
 
 #ph, #ph a {
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 ul {
@@ -73,7 +73,7 @@ ul {
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 8px;
 
 }
 
