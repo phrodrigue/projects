@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://phrodrigue.github.io/newbie/base-apparel-coming-soon-master/)
+- Solution URL: [here](https://phrodrigue.github.io/projects/newbie/base-apparel-coming-soon-master/)
 
 ## My process
 
