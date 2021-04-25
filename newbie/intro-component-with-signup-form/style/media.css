@@ -1,0 +1,74 @@
+@media screen and (max-width: 330px) {
+  main,
+  .content,
+  .subscription,
+  .form-item,
+  button {
+    width: auto;
+  }
+  
+  .free-trial {
+    padding: 20px;
+  }
+
+  .form-item {
+    grid-template-columns: auto 0px;
+  }
+
+  .form-item input {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    width: 700px;
+    padding-top: 100px;
+  }
+
+  .content {
+    text-align: left;
+    padding: 100px;
+    padding-right: 50px;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 800px;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content,
+  .subscription {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 1000px;
+  }
+
+  .free-trial {
+    padding: 15px;
+  }
+
+  .content,
+  .subscription {
+    width: 500px;
+  }
+
+  .form-item {
+    grid-template-columns: 370px 0px;
+  }
+}
