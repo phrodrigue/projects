@@ -1,0 +1,58 @@
+@media screen and (min-width: 680px) {
+  main {
+    width: 650px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px auto;
+  }
+
+  main p {
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+  }
+
+  .form-container {
+    height: 130px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-areas: 
+      "input button" 
+      "warning .";
+    gap: 10px;
+  }
+
+  #email {
+    margin: auto;
+    height: 44px;
+    width: 400px;
+    border-radius: 30px;
+    grid-area: input;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    grid-area: button;
+  }
+
+  #error-message {
+    text-align: left;
+    padding-left: 40px;
+    grid-area: warning;
+  }
+
+  .image {
+    width: 600px;
+    margin-bottom: 50px;
+  }
+}
