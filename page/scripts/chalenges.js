@@ -74,13 +74,13 @@ var listSolutions = [
         "intro-component-with-signup-form",
         "newbie"
     ),
-    /*
     new Challenge(
         "Ping single column coming soon page",
         "ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
         "ping-coming-soon-page",
         "newbie"
-    ),
+        ),
+        /*
       new Challenge(
           "desafio teste",
           "desafio-teste",
