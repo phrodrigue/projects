@@ -1,4 +1,4 @@
-let re = /^\S+@\S+\.\S+$/;
+// ^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$
 
 function checkEmail() {
   let email = document.querySelector("#email");
@@ -9,7 +9,7 @@ function checkEmail() {
   if (email.value === "") {
     message = "Whoops! It looks like you forgot to add your email"
     error = true
-  } else if (!re.test(email.value)) {
+  } else if (!email.validity.valid) {
     message = "Please provide a valid email address"
     error = true
   }

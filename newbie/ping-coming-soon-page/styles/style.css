@@ -64,11 +64,16 @@ form {
   border-radius: 25px;
 }
 
+
 #email {
   width: 270px;
   border: 2px var(--pale-blue) solid;
   padding-left: 30px;
   margin: 20px auto 10px;
+}
+
+#email:focus {
+  background-color: rgba(194, 211, 255, 0.165);
 }
 
 button {
@@ -83,6 +88,10 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+button:focus {
+  border: 1px white solid;
 }
 
 #error-message {
@@ -109,10 +118,11 @@ button:hover {
   border: 1px var(--pale-blue) solid;
   border-radius: 50%;
   width: 30px;
-  height: 25px;
+  height: 26px;
   margin: 2px;
-  padding-top: 5px;
+  padding-top: 4px;
   color: var(--blue);
+  transition: 200ms;
 }
 
 .logo-social-media > svg {
