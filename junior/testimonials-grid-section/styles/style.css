@@ -51,6 +51,7 @@ main {
 .container:nth-child(3) {
   background-color: #fff;
   color: var(--very-dark-blackish-blue);
+  opacity: 0.8;
 }
 
 .container:nth-child(4) {
@@ -60,6 +61,7 @@ main {
 .container:nth-child(5) {
   background-color: #fff;
   color: var(--very-dark-blackish-blue);
+  opacity: 0.8;
 }
 
 .user {
