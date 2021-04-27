@@ -1,7 +1,4 @@
 @media screen and (min-width: 650px) {
-  body {
-    padding: 0 50px;
-  }
   main {
     width: auto;
     max-width: 800px;
@@ -41,6 +38,9 @@
 }
 
 @media screen and (min-width: 1240px) {
+  body {
+    padding: 0;
+  }
   main {
     width: 1110px;
     max-width: none;

@@ -12,16 +12,21 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
   background-color: var(--light-grayish-blue);
   color: #fff;
-  padding: 0;
+  padding: 30px;
 }
 
 main {
   width: 335px;
-  margin: 70px auto 20px;
+  margin: 0 auto 20px;
   display: grid;
   grid-template-columns: auto;
   gap: 30px;
@@ -46,6 +51,7 @@ main {
 .container:nth-child(3) {
   background-color: #fff;
   color: var(--very-dark-blackish-blue);
+  opacity: 0.8;
 }
 
 .container:nth-child(4) {
@@ -55,6 +61,7 @@ main {
 .container:nth-child(5) {
   background-color: #fff;
   color: var(--very-dark-blackish-blue);
+  opacity: 0.8;
 }
 
 .user {
@@ -97,7 +104,6 @@ main {
 .attribution {
   font-size: 11px;
   color: var(--very-dark-blackish-blue);
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
