@@ -1,0 +1,73 @@
+/* small screens */
+@media screen and (max-width: 335px) {
+  main {
+    width: 98%;
+  }
+  .border {
+    top: -50px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 380px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+  }
+  main {
+    width: 85%;
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto 0;
+  }
+
+  .border {
+    top: -60px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 800px) {
+  main {
+    width: 95%;
+    max-width: 920px;
+    grid-template-columns: 38% auto;
+    grid-template-rows: 200px 0;
+    align-items: flex-end;
+    gap: 0 30px;
+  }
+
+  .container {
+    text-align: left;
+  }
+
+  .header {
+    padding: 40px;
+    height: 120px;
+    grid-template-rows: 50% 50%;
+  }
+
+  .storage {
+    height: 75px;
+    padding: 40px;
+    align-items: center;
+  }
+
+  .border {
+    width: 130px;
+    border-top-right-radius: 10px;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+    top: -115px;
+    left: 175%;
+  }
+
+  .total-left {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 120px;
+    padding-right: 0;
+  }
+}

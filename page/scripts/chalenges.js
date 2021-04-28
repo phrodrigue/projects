@@ -85,32 +85,18 @@ var listSolutions = [
     "testimonials-grid-section",
     "junior"
   ),
-  /*
-      new Challenge(
-          "desafio teste",
-          "desafio-teste",
-          "desafio-teste",
-          "intermediate"
-      ),
-      new Challenge(
-          "desafio teste",
-          "desafio-teste",
-          "desafio-teste",
-          "advanced"
-      ),
-      new Challenge(
-          "desafio teste",
-          "desafio-teste",
-          "desafio-teste",
-          "guru"
-      ),
-  
-  
-      new Challenge(
-          "",
-          "",
-          "",
-          ""
-      ),
-      */
+  new Challenge(
+    "Fylo data storage component",
+    "fylo-data-storage-component-1dZPRbV5n",
+    "fylo-data-storage-component",
+    "junior"
+  ),
+  /* 
+  new Challenge(
+      "",
+      "",
+      "",
+      ""
+  ),
+  */
 ];
