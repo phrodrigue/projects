@@ -91,6 +91,12 @@ var listSolutions = [
     "fylo-data-storage-component",
     "junior"
   ),
+  new Challenge(
+    "Interactive pricing component",
+    "interactive-pricing-component-t0m8PIyY8",
+    "interactive-pricing-component",
+    "junior"
+  ),
   /* 
   new Challenge(
       "",
