@@ -1,0 +1,44 @@
+@media screen and (min-width: 780px) {
+  main {
+    max-width: 1050px;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    align-items: center;
+  }
+
+  .card.professional {
+    padding: 50px 30px;
+  }
+
+  .dollar-sign {
+    font-size: 2rem;
+  }
+
+  .price-number {
+    font-size: 3rem;
+  }
+
+  .bg.top {
+    right: 0px;
+  }
+
+  .bg.bottom {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .dollar-sign {
+    font-size: 2.3rem;
+  }
+  .price-number {
+    font-size: 4rem;
+  }
+}

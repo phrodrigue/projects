@@ -97,6 +97,12 @@ var listSolutions = [
     "interactive-pricing-component",
     "junior"
   ),
+  new Challenge(
+    "Pricing component with toggle",
+    "pricing-component-with-toggle-8vPwRMIC",
+    "pricing-component-with-toggle",
+    "junior"
+  ),
   /* 
   new Challenge(
       "",
