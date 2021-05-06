@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+  /* Primary */
+  --linear-gradient1: hsl(236, 72%, 79%);
+  --linear-gradient2: hsl(237, 63%, 64%) ;
+  
+  /* Neutral */  
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: var(--grayish-blue);
+  margin: 0;
+  background-color: var(--very-light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  display: grid;
+  gap: 50px;
+}
+
+.header {
+  margin: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#switch-payment-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-grayish-blue);
+}
+
+.content {
+  display: grid;
+  gap: 30px;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.card.basic, .card.master {
+  background-color: #fff;
+}
+
+.card.basic button, .card.master button {
+  background-image: linear-gradient(90deg, var(--linear-gradient1), var(--linear-gradient2));
+  color: #fff;
+}
+
+.card.professional {
+  background-image: linear-gradient(135deg, var(--linear-gradient1), var(--linear-gradient2));
+  color: #fff;
+}
+
+.card.professional button {
+  background-color: #fff;
+  color: var(--linear-gradient2);
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-grayish-blue);
+}
+
+.price.white {
+  color: #fff;
+}
+
+.dollar-sign {
+  font-size: 2.3rem;
+  margin-right: 5px;
+}
+
+.price-number {
+  font-size: 4rem;
+}
+
+ul {
+  padding: 0;
+  margin: 30px auto;
+  list-style-type: none;
+  border-bottom: 1px solid hsla(234, 14%, 74%, 0.5);
+}
+
+li {
+  border-top: 1px solid hsla(234, 14%, 74%, 0.5);
+  padding: 1.1rem;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.card.basic button:hover, .card.master button:hover {
+  background-image: none;
+  background-color: #fff;
+  color: var(--linear-gradient2);
+  border: 1px solid var(--linear-gradient2);
+}
+
+.card.professional button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg.top {
+  right: -200px;
+  top: -30px;
+}
+
+.bg.bottom {
+  display: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/toggle.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="styles/media.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <h1 id="title">Our Pricing</h1>
+        <div id="switch-payment-type">
+          <span class="payment-type">Annually</span>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="payment-type">Monthly</span>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="card basic">
+          <h2 class="card-title">Basic</h2>
+          <div class="price">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price-number" data-text-swap="19.99">199.99</span>
+          </div>
+          <ul>
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button type="button">Learn More</button>
+        </div>
+
+        <div class="card professional">
+          <h2 class="card-title">Professional</h2>
+          <div class="price white">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price-number" data-text-swap="24.99">240.99</span>
+          </div>
+          <ul>
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <button type="button">Learn More</button>
+        </div>
+
+        <div class="card master">
+          <h2 class="card-title">Master</h2>
+          <div class="price">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price-number" data-text-swap="39.99">399.99</span>
+          </div>
+          <ul>
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <button type="button">Learn More</button>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/phrodrigue/">Pedro Rodrigues</a>.
+      </div>
+    </main>
+    <img
+      src="images/bg-top.svg"
+      alt="backgound top"
+      aria-hidden="true"
+      class="bg top"
+    />
+    <img
+      src="images/bg-bottom.svg"
+      alt="backgound bottom"
+      aria-hidden="true"
+      class="bg bottom"
+    />
+  </body>
+  <script src="script.js"></script>
+</html>
