@@ -103,6 +103,12 @@ var listSolutions = [
     "pricing-component-with-toggle",
     "junior"
   ),
+  new Challenge(
+      "Blogr landing page",
+      "blogr-landing-page-EX2RLAApP",
+      "blogr-landing-page",
+      "junior"
+  ),
   /* 
   new Challenge(
       "",
